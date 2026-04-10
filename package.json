@@ -1,0 +1,40 @@
+{
+  "name": "portfolio-2025",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "concurrently \"npm run client\" \"npm run server\"",
+    "client": "cd client && npm run dev",
+    "server": "cd server && nodemon index.js",
+    "build": "cd client && npm run build",
+    "start": "node server/index.js"
+  },
+  "keywords": [
+    "portfolio",
+    "mern",
+    "react",
+    "tailwindcss"
+  ],
+  "author": "Karthik Santhosh",
+  "license": "ISC",
+  "dependencies": {
+    "@getbrevo/brevo": "^5.0.3",
+    "axios": "^1.15.0",
+    "cors": "^2.8.6",
+    "dotenv": "^17.4.1",
+    "express": "^5.2.1",
+    "mongoose": "^9.4.1",
+    "nodemailer": "^8.0.5"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^6.0.1",
+    "autoprefixer": "^10.4.27",
+    "concurrently": "^9.1.2",
+    "nodemon": "^3.1.14",
+    "postcss": "^8.5.9",
+    "react": "^19.2.5",
+    "react-dom": "^19.2.5",
+    "tailwindcss": "^4.2.2",
+    "vite": "^8.0.8"
+  }
+}
